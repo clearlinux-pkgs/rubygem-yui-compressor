@@ -4,7 +4,7 @@
 #
 Name     : rubygem-yui-compressor
 Version  : 0.12.0
-Release  : 5
+Release  : 6
 URL      : https://rubygems.org/downloads/yui-compressor-0.12.0.gem
 Source0  : https://rubygems.org/downloads/yui-compressor-0.12.0.gem
 Summary  : No detailed summary available
@@ -50,39 +50,16 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
 pushd %{buildroot}%{gem_dir}/gems/yui-compressor-0.12.0
-ruby -v -I"lib:test" test*/*_test.rb || :
+ruby -v -I.:lib:test test*/*_test.rb || :
 popd
 
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/yui-compressor-0.12.0.gem
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/Error/cdesc-Error.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/OptionError/cdesc-OptionError.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/RuntimeError/cdesc-RuntimeError.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/cdesc-Compressor.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/command_option_for_charset-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/command_option_for_line_break-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/command_option_for_type-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/command_options-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/compress-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/java_opts-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/options-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/path_to_jar_file-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/path_to_java-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/Compressor/streamify-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/CssCompressor/cdesc-CssCompressor.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/CssCompressor/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/JavaScriptCompressor/cdesc-JavaScriptCompressor.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/JavaScriptCompressor/command_option_for_munge-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/JavaScriptCompressor/command_option_for_optimize-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/JavaScriptCompressor/command_option_for_preserve_semicolons-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/JavaScriptCompressor/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/YUI/cdesc-YUI.ri
-/usr/lib64/ruby/gems/2.2.0/doc/yui-compressor-0.12.0/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/gems/yui-compressor-0.12.0/README.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/yui-compressor-0.12.0/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/yui-compressor-0.12.0/lib/yui/compressor.rb
-/usr/lib64/ruby/gems/2.2.0/gems/yui-compressor-0.12.0/lib/yuicompressor-2.4.8.jar
-/usr/lib64/ruby/gems/2.2.0/gems/yui-compressor-0.12.0/test/compressor_test.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/yui-compressor-0.12.0.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/yui-compressor-0.12.0.gem
+/usr/lib64/ruby/gems/2.3.0/gems/yui-compressor-0.12.0/README.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/yui-compressor-0.12.0/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/yui-compressor-0.12.0/lib/yui/compressor.rb
+/usr/lib64/ruby/gems/2.3.0/gems/yui-compressor-0.12.0/lib/yuicompressor-2.4.8.jar
+/usr/lib64/ruby/gems/2.3.0/gems/yui-compressor-0.12.0/test/compressor_test.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/yui-compressor-0.12.0.gemspec

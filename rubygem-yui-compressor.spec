@@ -4,7 +4,7 @@
 #
 Name     : rubygem-yui-compressor
 Version  : 0.12.0
-Release  : 6
+Release  : 7
 URL      : https://rubygems.org/downloads/yui-compressor-0.12.0.gem
 Source0  : https://rubygems.org/downloads/yui-compressor-0.12.0.gem
 Summary  : No detailed summary available
